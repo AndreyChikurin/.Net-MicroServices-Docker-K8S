@@ -4,14 +4,14 @@
 ## Процесс сборки
 
 # Запуск docker контейнеров
-1 - docker build -t имяДокерХаба/platformservice .
-2 - docker push имяДокерХаба/platformservice
+1. docker build -t имяДокерХаба/platformservice .
+2. docker push имяДокерХаба/platformservice
 3 - docker build -t имяДокерХаба/commandservice .
 4 - docker push имяДокерХаба/commandservice
 
 # Запуск K8S
-[1] - Поменять названия image в yaml файлах поменять с hrago на имяДокерХаба
-[2] - kubectl apply -f platforms-depl.yaml
+1 - Поменять названия image в yaml файлах поменять с hrago на имяДокерХаба
+2 - kubectl apply -f platforms-depl.yaml
 3 - kubectl apply -f commands-depl.yaml
 4 - kubectl apply -f platforms-np-srv.yaml
 5 - kubectl apply -f ingress-srv.yaml
