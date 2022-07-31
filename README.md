@@ -16,7 +16,7 @@
 4. kubectl apply -f platforms-np-srv.yaml
 5. kubectl apply -f ingress-srv.yaml
 6. kubectl apply -f local-pvc.yaml
-7. добавить строчку в файл host ![image](https://user-images.githubusercontent.com/87278338/182035223-02f95064-d482-4062-89c8-a279f7e3312f.png)
+7. добавить строчку в файл host ![image](https://user-images.githubusercontent.com/87278338/182035247-aca99d7e-85c7-414c-8fa3-24a75a6a8cfc.png)
 8. Создать пароль для базы kubectl create secret generic mssql --from-literal=SA_PASSWORD="pa55worD!"
 9. kubectl apply -f mssql-plat-depl.yaml
 10. Поключиться к БД через SQL ManagemenStudio (localhost,1433 sa pa55worD!)
